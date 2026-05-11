@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registro de Incidencias</title>
+</head>
+<body>
+<div class="contenedor">
+    <h2>Registro de Incidencias</h2>
+    <form action="#" method="post">
+        <!-- Nombre del solicitante -->
+        <label for="nombre">Nombre del solicitante:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <!-- Correo electrónico -->
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Tipo de incidencia -->
+        <label for="tipo">Tipo de incidencia:</label>
+        <select id="tipo" name="tipo" required>
+            <option value="">Seleccione una opción</option>
+            <option value="hardware">Hardware</option>
+            <option value="software">Software</option>
+            <option value="red">Red</option>
+            <option value="otro">Otro</option>
+        </select>
+
+        <!-- Descripción de la incidencia -->
+        <label for="descripcion">Descripción de la incidencia:</label>
+        <textarea minlength="10" id="descripcion" name="descripcion" required></textarea>
+
+
+        <!-- prioridad -->
+        <label for="prioridad">Prioridad:</label>
+        <select id="prioridad" name="prioridad" required>
+            <option value="">Seleccione una opción</option>
+            <option value="alta">Alta</option>
+            <option value="media">Media</option>
+            <option value="baja">Baja</option>
+        </select>
+
+       
+
+        <!-- Botón de envío -->
+        <button type="submit">Registrar incidencia</button>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta De equipo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="contenedor">
+    <h1>Alta Equipo</h1>
+    <form action="#" method="post">
+        <label for="Nombre del Equipo">Nombre del Equipo</label>
+        <input type="text" id="nombre" name="nombre del equipo" required>
+        
+        <label for="Tipo de Equipo">Tipo de Equipo</label>
+        <select name="type" id="tipo de equipo" required>
+            <option value="">Seleccione una Opcion</option>
+            <option value="PC">PC</option>
+            <option value="Laptop">Laptop</option>
+            <option value="Proyector">Proyector</option>
+            <option value="Otros">Otros</option>
+           
+        </select>
+        <label for="NumSerie">Numero de Serie</label>
+        <input type="text" id="NumSerie" name="Numero de Serie" required>
+        
+        <label for="fecha de adquisicion">Fecha de adquisicion</label>
+        <input type="date" id="start" name="trip-start" value="2026-07-22" min="1967-01-01" max="2600-12-31" />
+
+        <label for="Estado">Estado del Equipo</label>
+          
+        <select name="estado" id="estadoEquipo" required>
+            <option value="">Seleccione una Opcion</option>
+            <option value="activo">Activo</option>
+            <option value="reparacion">En reparacion</option>
+            <option value="noServicio">Fuera de servicio</option>
+        </select>            
+
+        
+<button type="submit">Registrar incidencia</button>
+
+</form>
+
+</body>
+</html>
